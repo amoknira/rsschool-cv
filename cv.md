@@ -66,6 +66,5 @@ Develop the front end of a [museum landing page](https://github.com/rolling-scop
 * RSSchool JS/FE 2021 - 1st stage, unfinished
 
 
-
 ## Languages  
 Advanced level in english language and have no problem in reading technical docs. Lived in british family in Eastbourne for a month and studied english there with native teachers.  
