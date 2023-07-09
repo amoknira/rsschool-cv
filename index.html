@@ -2,79 +2,80 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV#2_amoknira</title>
 </head>
 <body>
     <div class = "wrap">
-        <section class="info">
+            <header>
+                <h1> Junior Frontend Developer </h1>
+            </header>
             <aside>
-                <!-- /* Avatarka */ -->
                 <img src="images/avatar.jpg" alt="avatar">
                 <h3> Golik Victoria</h3>
-                </aside>
-                <header>
-                    <h1> Junior Frontend Developer </h1>
-                </header>
-                <!--make inline nav  -->
-        <nav>
-            <ul class = "nav">
-                <li><p>Contacts</p></li>
-                <li><p>About me</p></li>
-                <li><p>Skills</p></li>
-                <li><p>Soft skills</p></li>
-                <li><p>Code examples</p></li>
-                <li><p>Work experience and Projects</p></li>
-                <li><p>Education</p></li>
-                <li><p>Languages</p></li>
+            </aside>
+        <nav id = "navWrap">
+            <ul clsss = "navbar">
+                <li><a class = "nav" href="#cont">Contacts</a></li>
+                <li><a class = "nav" href="#about">About me</a></li>
+                <li><a class = "nav" href="#skills">Skills</a></li>
+                <li><a class = "nav" href="#sSkills">Soft skills</a></li>
+                <li><a class = "nav" href="#code">Code examples</a></li>
+                <li><a class = "nav" href="#work">Work experience and Projects</a></li>
+                <li><a class = "nav" href="#edu">Education</a></li>
+                <li><a class = "nav" href="#lang">Languages</a></li>
             </ul>
         </nav>
-        </section>
         <!-- /* all info */ -->
         <main class="info">
             <div>
-                <h2>Contacts</h2>
+                <h2 id="cont">Contacts</h2>
                 <ul>
-                    <li> **email**: keyforgen@gmail.com</li>
-                    <li> **telegram**: @amoknira</li>
-                    <li> **discord**: amoknira/amoknira#9945</li>
-                    <li> **GitHub**: [amoknira](https://github.com/amoknira)</li>
+                    <li> <a href="mailto:keyforgen@gmail.com">email</a></li>
+                    <li> <a href="https://t.me/amoknira">telegram</a></li>
+                    <li> <a href="https://discordapp.com/users/307947054431207426/">discord</a></li>
+                    <li> <a href="https://github.com/amoknira">GitHub</a></li>
                 </ul>
             </div>
             <div>
-                <h2>About me</h2>
+            <h2 id="about">About me</h2>
                 <p>Graduated electrotechnical University in 2019 as an engineer, however I always was interested in coding. Was acquainted with Pascal and C++ - we coded with it in the school and university, some time later I started to learn Java, but then have understood that I'm more attracted to web development.</p>
                 <p>Had experience in Quality control, examination, testing and certification, that improve my patience and attentiveness.</p>
                 <p>Responsibility, fast learning and team working as well as problem solving are my main strengths.</p>
                 <p>Looking forward to become skilled and effective Front-End developer.</p>
             </div>
             <div>
-                <h2>Skills</h2>
+                <h2 id="skills">Skills</h2>
                 <ul>
-                    <li>* HTML</li>
-                    <li>* CSS</li>
-                    <li>* basic C++ (school and university course)</li>
-                    <li>* basic JavaScript</li>
-                    <li>* basic Git</li>
-                    <li>* basic SQL and MongoDB</li>
-                    <li>* Photoshop, GIMP</li>
-                    <li>* VSCode</li>
+                    <li class = "skill">HTML</li>
+                    <li class = "skill">CSS</li>
+                    <li class = "skill">basic C++ (school and university course)</li>
+                    <li class = "skill">basic JavaScript</li>
+                    <li class = "skill">basic Git</li>
+                    <li class = "skill">basic SQL and MongoDB</li>
+                    <li class = "skill">Photoshop, GIMP</li>
+                    <li class = "skill">VSCode</li>
                 </ul>
             </div>
             <div>
-                <h2>Soft Skills</h2>
-                <p>* Critical Argumentation and Design Thinking *ITMO University 2019*</p>
-                <p>* Negotiations, Influence and Conflict Management *ITMO University 2019*</p>
-                <p>* Teamwork</p>
+                <h2 id="sSkills">Soft Skills</h2>
+                <ul>
+                    <li class = "skill">Critical Argumentation and Design Thinking <strong>ITMO University 2019</strong></li>
+                    <li class = "skill">Negotiations, Influence and Conflict Management <strong>ITMO University 2019</strong></li>
+                    <li class = "skill">Teamwork</li>
+                </ul>
             </div>
             <div>
-                <h2>Code examples</h2>
+                <h2 id="code">Code examples</h2>
                 <p>
                     Jaden Smith, the son of Will Smith, is the star of films such as The Karate Kid (2010) and After Earth (2013). Jaden is also known for some of his philosophy that he delivers via Twitter. When writing on Twitter, he is known for almost always capitalizing every word. For simplicity, you'll have to capitalize each word, check out how contractions are expected to be in the example below.<br>
                     Your task is to convert strings to how they would be written by Jaden Smith. The strings are actual quotes from Jaden Smith, but they are not capitalized in the same way he originally typed them.
                 </p>
-                <p>
+                <p class = "codeBlock">
                     <code>
                     String.prototype.toJadenCase = function () {<br>
                         let words = this.split(" ");<br>
@@ -87,34 +88,34 @@
                 </p>
             </div>
             <div>
-                <h2>Work experience and Projects</h2>
-                <p> **IntSec, 2021-2023, Saint-Petersburg, Russia**</p>
-                    <p>*Quality control operator*</p>
+                <h2 id="work">Work experience and Projects</h2>
+                <p class = "place"> IntSec, 2021-2023, Saint-Petersburg, Russia</p>
+                    <p class = "position">Quality control operator</p>
                 <p>Provisioning of services for quality control of the customer's software: control and maintenance of the specified level of values ​​of such parameters as stability and speed of operation, the frequency of false positive and false negative results of data processing, etc.</p>
-                <p> **RSSchool, 2021, Remote**</p>
-                    <p>*Front-end Dev*</p>
-                <p>Develop the front end of a [museum landing page](https://github.com/rolling-scopes-school/amoknira-JSFE2021Q3/tree/gh-pages), using HTML, CSS and Javascript.</p>
+                <p class = "place"> RS-School, 2021, Remote</p>
+                    <p class = "position">Trainee Front-end Dev</p>
+                <p>Develop the front-end of a <a href="https://github.com/rolling-scopes-school/amoknira-JSFE2021Q3/tree/gh-pages">museum landing page</a>, using HTML, CSS and Javascript.</p>
             </div>
             <div>
-                <h2>Education</h2>
+                <h2 id="edu">Education</h2>
                 <ul>
                     <li> 2014 - 2019 Saint Petersburg Electrotechnical University "LETI" Faculty of Electronics, Bachelor's Degree in Electronics and Nanoelectronics</li>
-                    <li> school and university course of C++</li>
-                    <li> mimo  HTML, CSS, JavaScript basics course ['mimo'](https://getmimo.com)</li>
-                    <li> HTML and CSS ['Code-basics'](https://ru.code-basics.com)</li>
-                    <li> RSSchool JS/FE 2021 - 1st stage, unfinished</li>
+                    <li> School and university course of C++</li>
+                    <li> Mimo  HTML, CSS, JavaScript basics course <a href="https://getmimo.com">'mimo'</a></li>
+                    <li> HTML and CSS <a href="https://ru.code-basics.com">'Code-basics'</a></li>
+                    <li> RS-School JS/FE 2021 - 1st stage, unfinished</li>
                 </ul>
             </div>
             <div>
-                <h2>Languages</h2>
-                <p>Advanced level in english language. Have no problem in reading technical docs. <br> Lived in british family in Eastbourne for a month and studied english there with native teachers.</p>
+                <h2 id="lang">Languages</h2>
+                <p>Upper-intermediate level in english language. Have no problem in reading technical docs. <br> Lived in british family in Eastbourne for a month and studied english there with native teachers.</p>
             </div>
         </main>
         <div class="info">
         <footer>
-            <p>img</p>
+            <p><a href="https://github.com/amoknira">GitHub</a></p>
             <p>2023</p>
-            <p>RS-School</p>
+            <p><a href="https://rs.school/js/"><img class = "rsLogo" src="https://rs.school/images/rs_school_js.svg" alt="RS-School"></a></p>
         </footer>
         </div>
     </div>
